@@ -1,0 +1,77 @@
+**IEEE 14-Bara Sistemi Veri Özeti**
+
+### 1. Tam Hat Bağlantı Matrisi
+IEEE 14-bara sistemindeki tüm hat bağlantıları aşağıdaki tabloda sunulmaktadır:
+
+| Kaynak Bara | Hedef Bara |
+|--------------|-------------|
+|      0      |      1      |
+|      0      |      4      |
+|      1      |      2      |
+|      1      |      3      |
+|      1      |      4      |
+|      2      |      3      |
+|      3      |      4      |
+|      5      |     10      |
+|      5      |     11      |
+|      5      |     12      |
+|      8      |      9      |
+|      8      |     13      |
+|      9      |     10      |
+|     11      |     12      |
+|     12      |     13      |
+
+### 2. Sistem Gerilim Değerleri
+- **Baz Gerilim (p.u.):** Genellikle 1.0 p.u. olarak normalize edilir.
+
+- **Gerilim Sınırları:**
+  - **PQ Baraları:** Minimum 0.95 p.u., Maksimum 1.05 p.u.
+  - **PV Baraları:** Minimum 1.0 p.u., Maksimum 1.1 p.u.
+
+### 3. Hat Uzunlukları ve İletkenlik Değerleri
+- **Hat Uzunlukları:** Tüm hatlar için 1.0 km olarak tanımlanmıştır.
+
+- **İletkenlik (g):** Aşağıdaki formülle hesaplanır:
+  \[
+  g = \frac{1}{x}, \quad x > 0
+  \]
+
+**Örnek İletkenlik Hesaplamaları:**
+
+| Kaynak Bara | Hedef Bara | x (ohm/km) | g (1/ohm)  |
+|--------------|-------------|-------------|-------------|
+|      0      |      1      |    10.78    |    0.09275  |
+|      0      |      4      |    40.65    |    0.02460  |
+|      1      |      2      |    36.08    |    0.02772  |
+
+### 4. Jeneratör Detayları
+- **Jeneratör Sayısı:** 5 (1, 2, 3, 6 ve 8 numaralı baralarda bulunur).
+- **Reaktif Güç Sınırları:** Minimum -0.4 MVAR, Maksimum 0.5 MVAR.
+
+### 5. Trafo Parametreleri
+- **Trafo Lokasyonları:** 4-7, 4-9 ve 5-6 numaralı hatlarda bulunur.
+- **Kademe Sınırları:** Minimum 0.9, Maksimum 1.1, Kademe Adımı 0.0125.
+
+### 6. Hat Bağlantı Parametreleri
+Hatlardaki direnç (R), reaktans (X) ve susceptance (B) değerleri aşağıdaki tabloda verilmiştir:
+
+| Kaynak Bara | Hedef Bara | R (ohm) | X (ohm) | B (MVAR) |
+|--------------|-------------|---------|---------|----------|
+|      0      |      1      |  0.01938 | 0.05917 |    0     |
+|      0      |      4      |  0.05403 | 0.22304 |    0     |
+|      1      |      2      |  0.04699 | 0.19797 |    0     |
+|      1      |      3      |  0.06701 | 0.17103 |    0     |
+|      1      |      4      |  0.01335 | 0.04211 |    0     |
+|      2      |      3      |  0.01487 | 0.04234 |    0     |
+|      3      |      4      |  0.01524 | 0.05075 |    0     |
+|      5      |     10      |  0.03181 | 0.08437 |    0     |
+|      5      |     11      |  0.06414 | 0.15644 |    0     |
+|      5      |     12      |  0.06113 | 0.17632 |    0     |
+|      8      |      9      |  0.08130 | 0.17070 |    0     |
+|      8      |     13      |  0.15010 | 0.41070 |    0     |
+|      9      |     10      |  0.01480 | 0.06470 |    0     |
+|     11      |     12      |  0.11850 | 0.39250 |    0     |
+|     12      |     13      |  0.11200 | 0.37200 |    0     |
+
+Bu tablo, IEEE 14-bara sistemindeki tüm hat bağlantılarını ve parametrelerini net bir şekilde sunmaktadır.
+
